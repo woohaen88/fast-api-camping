@@ -58,4 +58,4 @@ def read_posts(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
 if __name__ == "__main__":
     # TODO
     # [ ] public이면 domain
-    uvicorn.run(app, host="localhost", port=3000)
+    uvicorn.run(app, host="0.0.0.0", port=3000)
